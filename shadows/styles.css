@@ -1,0 +1,66 @@
+body {
+    background-color: #547980;
+}
+
+div{
+    display: inline-block;
+    margin: 10px;
+}
+.card{
+    background: #9DE0AD;
+    border-radius: 100px;
+    width:30%;
+    height:200px;
+    box-shadow: 0px 2px 5px rgba(6, 45, 97), 0px 2px 5px rgba(6, 45, 97);
+}
+.card2{
+    background: #9DE0AD;
+    border-radius: 1px;
+    width:35%;
+    height:150px;
+    position: relative;
+
+}
+
+.card2::before, .card2::after{
+    content: "";
+    width: 30%;
+    height: 10px;
+    top : 93%;
+    left : 69%;
+    transform: rotate(5deg);
+    background-color: transparent;
+    z-index: -1;
+    position: absolute;
+    box-shadow: 5px 8px 10px rgba(6, 45, 97);
+
+}
+
+.card2::before{
+    left: 1%;
+    transform: rotate(-5deg);
+}
+
+
+.card3{
+    background: #9DE0AD;
+    border-radius: 1px;
+    width:20%;
+    height:300px;
+    position: relative;
+
+}
+
+.card3::after{
+    content: "";
+width: 30%;
+height: 50px;
+top: 83%;
+left: 68%;
+transform: rotate(5deg);
+background-color: #ff000000;
+z-index: -1;
+position: absolute;
+box-shadow: 5px 8px 10px rgba(6, 45, 97);
+
+}
